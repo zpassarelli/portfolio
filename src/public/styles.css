@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+  /*background-size: cover;*/
+  background-image: url("./media/nebula.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Share Tech Mono',monospace;
+}
+
+/*@media (max-width: 700px){
+
+}*/
