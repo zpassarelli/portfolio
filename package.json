@@ -5,7 +5,8 @@
   "author": "Zach Passarelli <zachary.passarelli@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/webpack -d"
+    "build": "./node_modules/.bin/webpack -d",
+    "start": "see src/public/index.html"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
