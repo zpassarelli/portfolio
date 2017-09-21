@@ -1,4 +1,10 @@
 import React, {Component} from 'react';
+import { Carousel } from 'react-bootstrap';
+
+import djzax from './media/djzax.png';
+import pixelart from './media/pixelart.png';
+import famhub from './media/famhub.png';
+import rezact from './media/rezact.png';
 
 export default class Projects extends Component {
   constructor(props){
@@ -15,15 +21,29 @@ export default class Projects extends Component {
       )
     } else if(this.props.category == 'profile'){
       return (
-        <div>
-          noo
-        </div>
+        null
       )
     } else {
       return (
-        <div>
-          its ya stuff.
-        </div>
+        <Carousel
+          controls={false}
+          indicators={false}
+          nextLabel={null}
+          prevLabel={null}
+          pauseOnHover={false}>
+          <Carousel.Item>
+            <img src={rezact} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={famhub} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={djzax} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={pixelart} />
+          </Carousel.Item>
+        </Carousel>
       )
     }
   }

@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import { Image } from 'react-bootstrap';
+
+import zach from './media/zach.jpg'
 
 export default class Profile extends Component {
   constructor(props){
@@ -10,20 +13,17 @@ export default class Profile extends Component {
     if(this.props.category == 'profile'){
       return (
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <Image src={zach} alt="Zach's photo" responsive />
+          This is me.
         </div>
       )
     } else if(this.props.category == 'projects'){
       return (
-        <div>
-          noo
-        </div>
+        null
       )
     } else {
       return (
-        <div>
-          its ya boi.
-        </div>
+        <Image src={zach} alt="Zach's photo" responsive />
       )
     }
   }
