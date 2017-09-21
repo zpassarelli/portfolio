@@ -1,11 +1,77 @@
-body {
+.text {
   text-align: center;
-  /*background-size: cover;*/
-  background-image: url("./media/nebula.jpg");
-  background-position: center;
-  background-attachment: fixed;
   color: white;
   font-family: 'Share Tech Mono',monospace;
+}
+
+.header {
+  font-size: 26px;
+}
+
+.tall {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.shadebox {
+  background-color: rgba(0,0,0,0.8);
+  padding: 1em;
+  border-style: double;
+  border-width: thick;
+  border-color: rgba(0,0,0,0);
+  transition: color 1.0s ease, border-color 1.0s ease;
+}
+
+.action:hover {
+  border-style: double;
+  border-color: cyan;
+  border-width: thick;
+  color: cyan;
+}
+
+.action:active {
+  font-weight: bold;
+}
+
+#override a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.slide {
+  transition: width 0.5s ease;
+}
+
+.rotate {
+  transition: transform 0.5s ease;
+}
+
+.vert {
+  transform: rotate(90deg);
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -50;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /*@media (max-width: 700px){
