@@ -76,7 +76,7 @@ export default class App extends Component {
 
         <div className="fullscreen-bg">
           <video loop muted autoPlay className="fullscreen-bg__video">
-              <source src="../app/media/out-b.mp4" type="video/mp4" />
+              <source src={require('./media/out-b.mp4')} type="video/mp4" />
           </video>
         </div>
 

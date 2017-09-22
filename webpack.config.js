@@ -19,11 +19,11 @@ var config = {
         }
       },
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpg|png|svg|mp4)$/,
         loader: 'file-loader',
         include: __dirname + '/src/media',
         options: {
-          publicPath: '/public'
+          publicPath: '/build/'
         }
       }
     ]

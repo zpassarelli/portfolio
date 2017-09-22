@@ -5,7 +5,7 @@
   "author": "Zach Passarelli <zachary.passarelli@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -d --config ./webpack.config.js",
+    "build": "webpack -d --config ./webpack.config.js --display-error-details",
     "dev": "webpack -d --watch --config ./webpack.config.js",
     "start": "node server.js"
   },
