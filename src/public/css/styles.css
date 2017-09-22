@@ -5,16 +5,63 @@
 }
 
 .header {
+  position: relative;
+  z-index: 5;
   font-size: 26px;
+  text-shadow: 3px 3px 3px black;
 }
 
 .tall {
-  height: 50vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
+#override .image {
+  height: 200px;
+  max-width: 200px;
+  width: 200px;
+}
+
+#override .carousel-indicators {
+  top: 200px;
+  bottom: 0px;
+}
+
+#override .carousel-indicators li {
+  background-color: black;
+}
+
+#override .carousel-indicators .active {
+  border-color: black;
+  background-color: white;
+}
+
+.carousel .icons {
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+}
+
+.preview-contain {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .contain {
-  max-width: 90vw;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+  margin: 10px;
 }
 
 .shadebox {
@@ -26,27 +73,30 @@
   transition: color 1.0s ease, border-color 1.0s ease;
 }
 
-.action:hover {
+.action:hover, .action:focus {
   border-style: double;
   border-color: cyan;
   border-width: thick;
-  color: cyan;
 }
 
-.action:active {
-  font-weight: bold;
-}
-
-#override a {
+.link {
   color: inherit;
   text-decoration: underline;
 }
 
-.slide {
+.link:hover {
+  font-weight: bold;
+  color: inherit;
+}
+
+.slider {
   transition: width 0.5s ease;
 }
 
 @media (min-width:440px){
+  .tall {
+    height: 50vh;
+  }
 
   .rotate {
     transition: transform 0.5s ease;
@@ -57,12 +107,12 @@
   }
 
   .contain {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 25vw;
-
+    text-align: left;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: baseline;
   }
+
 }
 
 .fullscreen-bg {
