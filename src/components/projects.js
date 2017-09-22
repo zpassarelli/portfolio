@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import { Carousel, Glyphicon } from 'react-bootstrap';
 
-import djzax from './media/djzax.png';
-import pixelart from './media/pixelart.png';
-import famhub from './media/famhub.png';
-import rezact from './media/rezact.png';
-import monb from './media/monb.png';
+import djzax from '../media/djzax.png';
+import pixelart from '../media/pixelart.png';
+import famhub from '../media/famhub.png';
+import rezact from '../media/rezact.png';
+import monb from '../media/monb.png';
 
 const INFO = {
   '0': {

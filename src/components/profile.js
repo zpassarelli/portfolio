@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import zach from './media/zach.jpg'
+import zach from '../media/zach.jpg'
 
 export default class Profile extends Component {
   constructor(props){

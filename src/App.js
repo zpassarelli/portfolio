@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Profile from './profile';
-import Projects from './projects';
+import Profile from './components/profile';
+import Projects from './components/projects';
 
 export default class App extends Component {
   constructor(){

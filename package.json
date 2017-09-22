@@ -10,10 +10,11 @@
     "start": "see src/public/index.html"
   },
   "dependencies": {
+    "express": "^4.15.4",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",
-    "webpack": "^3.5.5"
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
