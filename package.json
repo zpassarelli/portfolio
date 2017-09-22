@@ -1,13 +1,13 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Zach Passarelli <zachary.passarelli@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/webpack -d",
-    "dev": "./node_modules/.bin/webpack -d --watch --config ./webpack.config.js",
-    "start": "see src/public/index.html"
+    "build": "webpack -d --config ./webpack.config.js",
+    "dev": "webpack -d --watch --config ./webpack.config.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.15.4",

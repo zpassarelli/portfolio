@@ -1,21 +1,17 @@
 var webpack = require('webpack');
-var path = require('path');
-
-var BUILD_DIR = path.resolve(__dirname, '/public/build');
-var APP_DIR = path.resolve(__dirname, '/src');
 
 var config = {
-  entry: APP_DIR + '/index.js',
+  entry: __dirname + '/src/index.js',
   output: {
-    path: BUILD_DIR,
+    path: __dirname + '/public/build',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
         test: /\.jsx?/,
-        include: APP_DIR,
-        exclude: /node_modules/,
+        include: __dirname + '/src',
+        exclude: "/node_modules/",
         loader: 'babel-loader',
         query: {
           presets: ['es2015','react'],
@@ -25,7 +21,7 @@ var config = {
       {
         test: /\.(jpg|png|svg)$/,
         loader: 'file-loader',
-        include: APP_DIR + '/media/',
+        include: __dirname + '/src/media',
         options: {
           publicPath: '/public'
         }
